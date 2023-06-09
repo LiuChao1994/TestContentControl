@@ -1,0 +1,69 @@
+﻿<Window x:Class="TestContentControl.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TestContentControl"
+        xmlns:vm="clr-namespace:TestContentControl.ViewModels"
+        d:DataContext="{d:DesignInstance  Type =vm:MainWindowViewModel,IsDesignTimeCreatable=True}"
+        mc:Ignorable="d" WindowStartupLocation="CenterScreen"
+        Title="MainWindow" Height="450" Width="800">
+
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <ItemsControl ItemsSource="{Binding Modules}" Background="Gray">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel />
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <Button Command="{Binding DataContext.OpenCommand, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ItemsControl}}}"
+                            CommandParameter="{Binding Name}" Content="{Binding Name}" 
+                            Height="40" Margin="10">
+                        
+                        <Button.Style>
+                            <Style TargetType="{x:Type Button}">
+                                <Setter Property="BorderThickness" Value="1" />
+                                
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="{x:Type Button}">
+                                            <Border Background="{TemplateBinding Background}"
+                                                    BorderBrush="{TemplateBinding BorderBrush}"
+                                                    BorderThickness="{TemplateBinding BorderThickness}"
+                                                    CornerRadius="10">  
+                                                
+                                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                            </Border>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="BorderBrush" Value="Aquamarine" />
+                                        <Setter Property="Background" Value="Pink" />
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                          
+                        </Button.Style>
+                    </Button>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+      
+        <ContentControl Grid.Column="1" Content="{Binding Page}"/>
+
+        <!--<Button Grid.Column="1" Width="100" Height="40" Panel.ZIndex="2" Command="{Binding OpenCommand}" Content="{Binding Modules[0].Name}" />-->
+
+    </Grid>
+</Window>
