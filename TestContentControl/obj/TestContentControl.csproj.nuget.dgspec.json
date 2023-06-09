@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\TestDome\\TestDome3\\TestContentControl\\TestContentControl\\TestContentControl.csproj": {}
+    "E:\\TestDome\\CSharpDemo\\TestDome3\\TestContentControl\\TestContentControl\\TestContentControl.csproj": {}
   },
   "projects": {
-    "E:\\TestDome\\TestDome3\\TestContentControl\\TestContentControl\\TestContentControl.csproj": {
+    "E:\\TestDome\\CSharpDemo\\TestDome3\\TestContentControl\\TestContentControl\\TestContentControl.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\TestDome\\TestDome3\\TestContentControl\\TestContentControl\\TestContentControl.csproj",
+        "projectUniqueName": "E:\\TestDome\\CSharpDemo\\TestDome3\\TestContentControl\\TestContentControl\\TestContentControl.csproj",
         "projectName": "TestContentControl",
-        "projectPath": "E:\\TestDome\\TestDome3\\TestContentControl\\TestContentControl\\TestContentControl.csproj",
+        "projectPath": "E:\\TestDome\\CSharpDemo\\TestDome3\\TestContentControl\\TestContentControl\\TestContentControl.csproj",
         "packagesPath": "C:\\Users\\13487\\.nuget\\packages\\",
-        "outputPath": "E:\\TestDome\\TestDome3\\TestContentControl\\TestContentControl\\obj\\",
+        "outputPath": "E:\\TestDome\\CSharpDemo\\TestDome3\\TestContentControl\\TestContentControl\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

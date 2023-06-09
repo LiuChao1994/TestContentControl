@@ -11,7 +11,5 @@ namespace TestContentControl
         {
             InitializeComponent();
         }
-
-    
     }
 }

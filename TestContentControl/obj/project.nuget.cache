@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rdYfsZXB1UBd7YpAXm8daeBO2PmopdKcIXZ06dn6WOkcd1tSudzLXewgVmqk+Utu3/m1YV81jEspI+6uVi6Tig==",
+  "dgSpecHash": "GLZNG542adks+icRLpMnkEzPk7d0oGoxiWPZf/rxTgoWI2mbOZQSLPjmzIoDDxJGuQxYKnaDO6K63DXa2QUFBg==",
   "success": true,
-  "projectFilePath": "E:\\TestDome\\TestDome3\\TestContentControl\\TestContentControl\\TestContentControl.csproj",
+  "projectFilePath": "E:\\TestDome\\CSharpDemo\\TestDome3\\TestContentControl\\TestContentControl\\TestContentControl.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\13487\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.0\\communitytoolkit.mvvm.8.2.0.nupkg.sha512",
     "C:\\Users\\13487\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
